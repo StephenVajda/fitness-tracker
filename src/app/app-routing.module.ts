@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {Routes,RouterModule} from '@angular/router';
+import {Routes,RouterModule,Router} from '@angular/router';
 import {WelcomeComponent} from './welcome/welcome.component';
 import {TrainingComponent} from './training/training/training.component';
 import {SignupComponent} from './auth/signup/signup.component';
@@ -13,7 +13,8 @@ const routes:Routes=[
     {path:'login',component:LoginComponent}];
 
 @NgModule({
-    imports:[RouterModule.forRoot(routes)]
+    imports:[RouterModule.forRoot(routes)],
+    exports:[RouterModule]
 })
 export class AppRoutingModule{
 
