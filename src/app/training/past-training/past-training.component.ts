@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PastTrainingComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    console.log("Past training loaded");
+  }
 
   ngOnInit() {
   }
-
+  
 }
